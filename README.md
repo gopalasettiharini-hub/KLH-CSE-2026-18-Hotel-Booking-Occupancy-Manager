@@ -36,9 +36,9 @@ View the booking details, total amount, membership category, and available rooms
 
 
 
-1) Requirement Analysis Completed
-2) Design Completed
-3) Coding Completed
-4) Testing Completed
-5) Documentation Completed
+1) Requirement Analysis 
+2) Design 
+3) Coding 
+4) Testing 
+5) Documentation 
 
