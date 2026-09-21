@@ -36,10 +36,9 @@ View the booking details, total amount, membership category, and available rooms
 
 
 
-✅ Requirement Analysis Completed
- ✅ Design Completed
- ✅ Coding Completed
- ✅ Testing Completed
- ✅ Documentation Completed
+1) Requirement Analysis Completed
+2) Design Completed
+3) Coding Completed
+4) Testing Completed
+5) Documentation Completed
 
-Current Status: Project Successfully Completed and Ready for Demonstration.
