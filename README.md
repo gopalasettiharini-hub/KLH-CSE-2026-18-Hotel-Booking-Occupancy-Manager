@@ -15,3 +15,31 @@ manage booking details. Hotel staff can monitor room occupancy, update room stat
 system helps reduce manual work, avoid booking conflicts, and improve overall hotel management. It provides a simple, 
 organized, and user-friendly solution for handling hotel reservations and room availability.
 
+
+Setup Instructions -
+1.Install Java (JDK 8 or above).
+2.Open any Java IDE (Eclipse, IntelliJ, NetBeans, or VS Code).
+3.Create a Java project and add the file HotelManagement.java.
+4.Copy the source code and save it.
+5.Compile the program:
+6.Run the program:
+
+
+Enter:
+
+Customer Name
+Room Type
+Number of Rooms
+Number of Days
+
+View the booking details, total amount, membership category, and available rooms.
+
+
+
+✅ Requirement Analysis Completed
+ ✅ Design Completed
+ ✅ Coding Completed
+ ✅ Testing Completed
+ ✅ Documentation Completed
+
+Current Status: Project Successfully Completed and Ready for Demonstration.
