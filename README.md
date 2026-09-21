@@ -3,7 +3,7 @@ Name - Harini Gopalasetti
     roll no - 2620030050
 Name - Akshaya Marri 
     roll no - 2620090011
-Supervisor Name -  Rakesh K 
+Supervisor Name -  Rakesh
 
 
 Title - Hotel Booking and Occupancy Manager
