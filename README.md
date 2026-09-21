@@ -7,6 +7,8 @@ Supervisor Name -  Rakesh
 
 
 Title - Hotel Booking and Occupancy Manager
+
+
 Abstract - The *Hotel Booking & Occupancy Manager* is a software system designed to simplify and manage hotel room bookings 
 and occupancy efficiently.The system allows users to view available rooms, make reservations, check-in and check-out, and 
 manage booking details. Hotel staff can monitor room occupancy, update room status, and maintain customer records. The 
