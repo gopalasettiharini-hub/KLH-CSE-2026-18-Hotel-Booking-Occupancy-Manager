@@ -3,7 +3,9 @@ Name - Harini Gopalasetti
     roll no - 2620030050
 Name - Akshaya Marri 
     roll no - 2620090011
-Supervisor Name -   
+Supervisor Name -  Rakesh K 
+
+
 Title - Hotel Booking and Occupancy Manager
 Abstract - The *Hotel Booking & Occupancy Manager* is a software system designed to simplify and manage hotel room bookings 
 and occupancy efficiently.The system allows users to view available rooms, make reservations, check-in and check-out, and 
