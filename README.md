@@ -16,6 +16,7 @@ system helps reduce manual work, avoid booking conflicts, and improve overall ho
 organized, and user-friendly solution for handling hotel reservations and room availability.
 
 
+
 Setup Instructions -
 1.Install Java (JDK 8 or above).
 2.Open any Java IDE (Eclipse, IntelliJ, NetBeans, or VS Code).
@@ -23,7 +24,6 @@ Setup Instructions -
 4.Copy the source code and save it.
 5.Compile the program:
 6.Run the program:
-
 
 Enter:
 
