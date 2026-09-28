@@ -28,8 +28,11 @@ Setup Instructions -
 Enter:
 
 Customer Name
+
 Room Type
+
 Number of Rooms
+
 Number of Days
 
 View the booking details, total amount, membership category, and available rooms.
