@@ -1,0 +1,14 @@
+java
+public class RoomStateWeek02 {
+    static boolean validRoom(String code) {
+        return code != null && code.matches("R10[1-4]");
+    }
+    public static void main(String[] args) {
+        String accepted = "R102";
+        String rejected = "R999";
+        System.out.println("INPUT CODE: " + accepted);
+        System.out.println("STATE CODE ACCEPTED: " + (validRoom(accepted) ? "IN_USE" : "REJECTED"));
+        System.out.println("INPUT CODE: " + rejected);
+        System.out.println(validRoom(rejected) ? "STATE CODE ACCEPTED" : "INVALID ROOM CODE");
+    }
+}

@@ -1,0 +1,15 @@
+java
+public class RoomStateWeek05 {
+    static boolean isKnownState(String state) {
+        return state.equals("READY") || state.equals("IN_USE") || state.equals("RESET_REQUIRED");
+    }
+    static String nextState(String state) {
+        return state.equals("READY") ? "IN_USE" : state;
+    }
+    public static void main(String[] args) {
+        String fixture = "READY";
+        System.out.println("VALID STATE: " + fixture);
+        System.out.println("STATE RECOGNISED: " + isKnownState(fixture));
+        System.out.println("TRANSITION RESULT: " + nextState(fixture));
+    }
+}

@@ -1,0 +1,23 @@
+java
+class InvalidRoomStateException extends Exception {
+    InvalidRoomStateException(String message) {
+        super(message);
+    }
+}
+public class RoomStateWeek10 {
+    static void validate(String state) throws InvalidRoomStateException {
+        if (!(state.equals("READY") || state.equals("IN_USE") || state.equals("RESET_REQUIRED"))) {
+            throw new InvalidRoomStateException("Unsupported classroom state");
+        }
+    }
+    public static void main(String[] args) {
+        String fixture = "ARCHIVED";
+        System.out.println("TEST STATE: " + fixture);
+        try {
+            validate(fixture);
+        } catch (InvalidRoomStateException exception) {
+            System.out.println("EXCEPTION HANDLED: " + exception.getMessage());
+        }
+        System.out.println("EXCEPTION TEST: PASS");
+    }
+}

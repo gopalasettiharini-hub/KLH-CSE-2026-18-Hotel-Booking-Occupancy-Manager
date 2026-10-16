@@ -1,0 +1,16 @@
+java
+public class RoomStateWeek07 {
+    static boolean validCode(String code) {
+        return code != null && code.matches("R10[1-4]");
+    }
+    static boolean validState(String state) {
+        return state != null && (state.equals("READY") || state.equals("IN_USE") || state.equals("RESET_REQUIRED"));
+    }
+    public static void main(String[] args) {
+        boolean emptyRejected = !validCode("");
+        boolean unknownRejected = !validState("ARCHIVED");
+        System.out.println("TEST EMPTY CODE: " + (emptyRejected ? "REJECTED" : "FAILED"));
+        System.out.println("TEST UNKNOWN STATE: " + (unknownRejected ? "REJECTED" : "FAILED"));
+        System.out.println("EDGE-CASE CHECK: " + (emptyRejected && unknownRejected ? "PASS" : "FAIL"));
+    }
+}

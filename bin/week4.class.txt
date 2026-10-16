@@ -1,0 +1,11 @@
+java
+public class RoomStateWeek04 {
+    public static void main(String[] args) {
+        String[] rooms = {"R101", "R102", "R103", "R104"};
+        String[] states = {"READY", "IN_USE", "RESET_REQUIRED", "READY"};
+        for (int index = 0; index < rooms.length; index++) {
+            System.out.println("ROOM " + rooms[index] + " -> " + states[index]);
+        }
+        System.out.println("ROOMS INSPECTED: " + rooms.length);
+    }
+}

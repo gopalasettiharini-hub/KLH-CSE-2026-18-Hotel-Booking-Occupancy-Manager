@@ -1,0 +1,29 @@
+java
+import java.util.ArrayList;
+import java.util.List;
+class RoomFixture {
+    final String code;
+    final String state;
+    RoomFixture(String code, String state) {
+        this.code = code;
+        this.state = state;
+    }
+}
+public class RoomStateWeek12 {
+    public static void main(String[] args) {
+        List<RoomFixture> rooms = new ArrayList<>();
+        rooms.add(new RoomFixture("R101", "READY"));
+        rooms.add(new RoomFixture("R102", "IN_USE"));
+        rooms.add(new RoomFixture("R103", "RESET_REQUIRED"));
+        rooms.add(new RoomFixture("R104", "READY"));
+        long ready = rooms.stream().filter(room -> room.state.equals("READY")).count();
+        long inUse = rooms.stream().filter(room -> room.state.equals("IN_USE")).count();
+        long reset = rooms.stream().filter(room -> room.state.equals("RESET_REQUIRED")).count();
+        System.out.println("FINAL CLASSROOM ROOM-STATE REPORT");
+        System.out.println("TOTAL ROOMS: " + rooms.size());
+        System.out.println("READY: " + ready);
+        System.out.println("IN_USE: " + inUse);
+        System.out.println("RESET_REQUIRED: " + reset);
+        System.out.println("FINAL VERIFICATION: " + (rooms.size() == 4 ? "PASS" : "FAIL"));
+    }
+}

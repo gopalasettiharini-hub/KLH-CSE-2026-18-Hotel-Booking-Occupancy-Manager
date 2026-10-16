@@ -1,0 +1,71 @@
+java
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.List;
+// --- Supporting Classes for Weeks 09, 10 & 12 ---
+class LearningRoom {
+    private final String code;
+    private final String state;
+    LearningRoom(String code, String state) {
+        this.code = code;
+        this.state = state;
+    }
+    @Override
+    public String toString() {
+        return code + " [" + state + "]";
+    }
+}
+class InvalidRoomStateException extends Exception {
+    InvalidRoomStateException(String message) {
+        super(message);
+    }
+}
+class RoomFixture {
+    final String code;
+    final String state;
+    RoomFixture(String code, String state) {
+        this.code = code;
+        this.state = state;
+    }
+}
+public class HotelBookingMaster {
+    // --- Week 02 Validator ---
+    static boolean validRoomCode(String code) {
+        return code != null && code.matches("R10[1-4]");
+    }
+    // --- Week 05 Methods ---
+    static boolean isKnownState(String state) {
+        return state != null && (state.equals("READY") || state.equals("IN_USE") || state.equals("RESET_REQUIRED"));
+    }
+    static String nextState(String state) {
+        return "READY".equals(state) ? "IN_USE" : state;
+    }
+    // --- Week 06 Search Method ---
+    static String findState(String[] rooms, String[] states, String target) {
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].equals(target)) {
+                return rooms[i] + " -> " + states[i];
+            }
+        }
+        return "NOT FOUND";
+    }
+    // --- Week 08 Recursive Counter ---
+    static int countResetRequired(String[] states, int index) {
+        if (index == states.length) return 0;
+        int current = "RESET_REQUIRED".equals(states[index]) ? 1 : 0;
+        return current + countResetRequired(states, index + 1);
+    }
+    // --- Week 10 Exception Validator ---
+    static void validateState(String state) throws InvalidRoomStateException {
+        if (!isKnownState(state)) {
+            throw new InvalidRoomStateException("Unsupported classroom state");
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("==================================================");
+        System.out.println("  HOTEL BOOKING OCCUPANCY MANAGER - WEEKS 01 TO 12");
+        System.out.println("==================================================\n");
+        // --- WEEK 01 ---
+        System.out.println("--- [WEEK 01] CONSOLE BASELINE ---");

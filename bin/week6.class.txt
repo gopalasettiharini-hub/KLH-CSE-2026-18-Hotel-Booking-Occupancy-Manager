@@ -1,0 +1,19 @@
+java
+public class RoomStateWeek06 {
+    static String findState(String[] rooms, String[] states, String target) {
+        for (int index = 0; index < rooms.length; index++) {
+            if (rooms[index].equals(target)) {
+                return rooms[index] + " -> " + states[index];
+            }
+        }
+        return "NOT FOUND";
+    }
+    public static void main(String[] args) {
+        String[] rooms = {"R101", "R102", "R103", "R104"};
+        String[] states = {"READY", "IN_USE", "RESET_REQUIRED", "READY"};
+        System.out.println("SEARCH: R103");
+        System.out.println("MATCH: " + findState(rooms, states, "R103"));
+        System.out.println("SEARCH: R999");
+        System.out.println("MATCH: " + findState(rooms, states, "R999"));
+    }
+}

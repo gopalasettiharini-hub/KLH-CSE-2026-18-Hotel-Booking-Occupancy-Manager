@@ -1,0 +1,22 @@
+java
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+public class RoomStateWeek11 {
+    public static void main(String[] args) throws IOException {
+        Path file = Path.of("room_state_fixture.csv");
+        List<String> rows = List.of(
+            "room,state",
+            "R101,READY",
+            "R102,IN_USE",
+            "R103,RESET_REQUIRED",
+            "R104,READY"
+        );
+        Files.write(file, rows);
+        int count = Files.readAllLines(file).size() - 1;
+        System.out.println("CSV WRITTEN: room_state_fixture.csv");
+        System.out.println("ROWS WRITTEN: " + count);
+        System.out.println("FILE CHECK: " + (count == 4 ? "PASS" : "FAIL"));
+    }
+}

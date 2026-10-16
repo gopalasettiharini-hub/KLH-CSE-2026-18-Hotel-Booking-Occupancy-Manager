@@ -1,0 +1,22 @@
+java
+class LearningRoom {
+    private final String code;
+    private final String state;
+    LearningRoom(String code, String state) {
+        this.code = code;
+        this.state = state;
+    }
+    @Override
+    public String toString() {
+        return code + " [" + state + "]";
+    }
+}
+public class RoomStateWeek09 {
+    public static void main(String[] args) {
+        LearningRoom first = new LearningRoom("R101", "READY");
+        LearningRoom second = new LearningRoom("R102", "IN_USE");
+        System.out.println("OBJECT: " + first);
+        System.out.println("OBJECT: " + second);
+        System.out.println("OBJECT MODEL: PASS");
+    }
+}

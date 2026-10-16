@@ -1,0 +1,10 @@
+java
+public class RoomStateWeek03 {
+    public static void main(String[] args) {
+        String current = "READY";
+        String next = current.equals("READY") ? "IN_USE" : current;
+        System.out.println("CURRENT: R101 -> " + current);
+        System.out.println("RULE: READY changes to IN_USE");
+        System.out.println("NEXT: R101 -> " + next);
+    }
+}

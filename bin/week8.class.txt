@@ -1,0 +1,15 @@
+java
+public class RoomStateWeek08 {
+    static int countResetRequired(String[] states, int index) {
+        if (index == states.length) return 0;
+        int current = states[index].equals("RESET_REQUIRED") ? 1 : 0;
+        return current + countResetRequired(states, index + 1);
+    }
+    public static void main(String[] args) {
+        String[] states = {"READY", "IN_USE", "RESET_REQUIRED", "READY"};
+        int count = countResetRequired(states, 0);
+        System.out.println("RECURSIVE COUNT START");
+        System.out.println("RESET_REQUIRED ROOMS: " + count);
+        System.out.println("RECURSIVE COUNT: " + (count == 1 ? "PASS" : "FAIL"));
+    }
+}
